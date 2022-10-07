@@ -1,136 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap</title>
-    <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
- <div class="main">
-    <div class=" main-item navb">
-        
-        
-        <img src="img/logo.svg"  class="left" alt="my logo">
-   
-        <div id="feature-container" class="left">
-            <div class="select-box">
-                <div class="options-container">
-                    <div class="options">
-                        <input 
-                                type="radio" 
-                                class="radio" 
-                                id="Todo List" 
-                                name="category" >
-                                <label for="todo"><img class ="todo"src="img/icon-todo.svg">
-                                    To doList</label>
-                    </div>
-
-                    <div class="options">
-                        <input 
-                                type="radio" 
-                                class="radio" 
-                                id="Todo List" 
-                                name="category" >
-                                <label for="todo"><img class ="calen"src="img/icon-calendar.svg">
-                                    Calender</label>
-                    </div>
-
-                    <div class="options">
-                        <input 
-                                type="radio" 
-                                class="radio" 
-                                id="Todo List" 
-                                name="category" >
-                                <label for="todo"><img class ="rem" src="img/icon-reminders.svg">
-                                    Reminder</label>
-                    </div>
-
-                    <div class="options">
-                        <input 
-                                type="radio" 
-                                class="radio" 
-                                id="Todo List" 
-                                name="category" >
-                                <label for="todo"><img class ="plan"src="img/icon-planning.svg">
-                                Planning</label>
-                    </div>
-                </div>
-                <h3 class="selected">Features</h3>
-            </div>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex-item">
+        <div class="logo-container">
+          <img src="img/logo.svg" class="logo" alt="my logo" />
         </div>
+        <nav class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-list_item">
+              <h2 class="nav-headiner features">Features</h2>
+              <div class="dropdown-container">
+                <ul class="dropdown-list">
+                  <li class="dropdown-list_item">To do List</li>
+                  <li class="dropdown-list_item">Calender</li>
+                  <li class="dropdown-list_item">Reminder</li>
+                  <li class="dropdown-list_item">Planning</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-list_item">
+              <h2 class="nav-headiner">Company</h2>
+              <div class="dropdown-container">
+                <ul class="dropdown-list">
+                  <li class="dropdown-list_item">History</li>
+                  <li class="dropdown-list_item">Our Teams</li>
+                  <li class="dropdown-list_item">Blog</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-list_item"><h2 class="nav-headiner">Careers</h2></li>
+            <li class="nav-list_item"><h2 class="nav-headiner">About</h2></li>
+          </ul>
+        </nav>
+      </div>
 
+      <div class="flex-item">
+        <div class="auth-container">
+          <ul class="auth-list">
+            <li class="auth-list_item">Login</li>
+            <li class="auth-list_item">Register</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- This is where the main content will go -->
+    </main>
+
+    <div class="main">
+      <div class="main-item navb">
+        <div id="feature-container" class="left">
+          <div class="select-box">
+            <div class="options-container">
+              <div class="options">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Todo List"
+                  name="category"
+                />
+                <label for="todo"
+                  ><img class="todo" src="img/icon-todo.svg" /> To doList</label
+                >
+              </div>
+
+              <div class="options">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Todo List"
+                  name="category"
+                />
+                <label for="todo"
+                  ><img class="calen" src="img/icon-calendar.svg" />
+                  Calender</label
+                >
+              </div>
+
+              <div class="options">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Todo List"
+                  name="category"
+                />
+                <label for="todo"
+                  ><img class="rem" src="img/icon-reminders.svg" />
+                  Reminder</label
+                >
+              </div>
+
+              <div class="options">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Todo List"
+                  name="category"
+                />
+                <label for="todo"
+                  ><img class="plan" src="img/icon-planning.svg" />
+                  Planning</label
+                >
+              </div>
+            </div>
+            <h3 class="selected">Features</h3>
+          </div>
+        </div>
 
         <div id="company-container" class="left">
-            <div class="select-box">
-                <div class="options-container">
-                    <div class="options">
-                        <input type="radio"
-                                class="radio"
-                                id="history"
-                                name="category">
-                                <label for="history">History</label>
-                    </div>
+          <div class="select-box">
+            <div class="options-container">
+              <div class="options">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="history"
+                  name="category"
+                />
+                <label for="history">History</label>
+              </div>
 
-                    <div class="options">
-                        <input type="radio"
-                        class="radio"
-                        id="our-team"
-                        name="category">
-                        <label for="our-team">Our Team</label>
-                    </div>
+              <div class="options">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="our-team"
+                  name="category"
+                />
+                <label for="our-team">Our Team</label>
+              </div>
 
-                    <div class="options">
-                        <input type="radio"
-                        class="radio"
-                        id="blog"
-                        name="category">
-                        <label for="blog">Blog</label>
-                    </div>
-                </div>
-                <h3 class="selected">Company</h3>
+              <div class="options">
+                <input type="radio" class="radio" id="blog" name="category" />
+                <label for="blog">Blog</label>
+              </div>
             </div>
+            <h3 class="selected">Company</h3>
+          </div>
         </div>
 
-            <a href="#" class="left">Careers</a>
+        <a href="#" class="left">Careers</a>
         <a href="#" class="left">About</a>
 
-
-
         <button id="register" class="right">Register</button>
-        <a href="#" id ="login" class="right">Login</a>
+        <a href="#" id="login" class="right">Login</a>
+      </div>
 
-    </div>
-        
- 
-    <div class="main-item text">
+      <div class="main-item text">
+        <h2>Make <br />remote Work</h2>
 
-        <h2>Make <br>remote Work</h2>
-
-        <p>Get your team in sync, no matter your location.<br>
-            Streamline processes, create team rituals, and <br>
-            watch produtivity soar.
+        <p>
+          Get your team in sync, no matter your location.<br />
+          Streamline processes, create team rituals, and <br />
+          watch produtivity soar.
         </p>
 
         <button id="learn-more">Learn More</button>
 
         <div class="icon">
-            <img class="" src="img/client-databiz.svg">
-            <img class="dicon" src="img/client-audiophile.svg">
-            <img class="dicon" src="img/client-meet.svg">
-            <img class="dicon" src="img/client-maker.svg">
-           
+          <img class="" src="img/client-databiz.svg" />
+          <img class="dicon" src="img/client-audiophile.svg" />
+          <img class="dicon" src="img/client-meet.svg" />
+          <img class="dicon" src="img/client-maker.svg" />
         </div>
+      </div>
+      <div class="main-item desktop">
+        <img class="desk mobile" src="img/image-hero-desktop.png" />
+      </div>
     </div>
-    <div class=" main-item desktop" >
-        <img class="desk mobile" src="img/image-hero-desktop.png">  
-    </div>
-  
-</div>
-
-
 
     <script src="script/home.js"></script>
-</body>
+  </body>
 </html>
