@@ -129,16 +129,17 @@ a{
 .select-box{
     display: flex;
     flex-direction: column;
-    
+   
 }
 
 
-.select-box .options-container {
+.options-container {
     background-color:white;
     max-height:0;
-    overflow: hidden;
+   /* overflow: hidden;*/
     border-radius: 12px;
     order: 1;
+    border: 1px solid red;
 }
 
 .select-box .options-container.active{
@@ -193,7 +194,7 @@ a{
 
 .selected::after{
    content: "";
-    background: url("img/icon-arrow-down.svg");
+    background: url("/img/icon-arrow-down.svg");
     background-repeat: no-repeat;
 
     position: absolute;
