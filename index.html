@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="flex-item">
-        <div class="logo-container">
-          <img src="img/logo.svg" class="logo" alt="my logo" />
-        </div>
-        <nav class="nav-container">
+    <header>
+    <div class="nav-container">
+          <img src="img/logo.svg" class="logo" alt="my logo">
+      
+          <img class="menu" src="img/icon-menu.svg">
+       
+           <div class="mobile-nav" id="menu-nav">
+
+            <img class="menu close-icon" src="img/icon-close-menu.svg">
           <ul class="nav-list">
             <li class="nav-list_item">
-              <h2 class="nav-headiner features">Features</h2>
+              <h2 class="nav-headiner features">Features<img src="img/icon-arrow-down.svg"></h2>
               <div class="dropdown-container">
                 <ul class="dropdown-list">
-                  <li class="dropdown-list_item">To do List</li>
-                  <li class="dropdown-list_item">Calender</li>
-                  <li class="dropdown-list_item">Reminder</li>
-                  <li class="dropdown-list_item">Planning</li>
+                  <li class="dropdown-list_item"><img class="feature" src=img/icon-todo.svg>Todo List</li>
+                  <li class="dropdown-list_item"><img class="feature" src=img/icon-calendar.svg>Calender</li>
+                  <li class="dropdown-list_item"><img class="feature" src="img/icon-reminders.svg">Reminder</li>
+                  <li class="dropdown-list_item"><img class="feature" src="img/icon-planning.svg">Planning</li>
                 </ul>
               </div>
             </li>
             <li class="nav-list_item">
-              <h2 class="nav-headiner">Company</h2>
+              <h2 class="nav-headiner company">Company<img src="img/icon-arrow-down.svg"></h2>
               <div class="dropdown-container">
                 <ul class="dropdown-list">
                   <li class="dropdown-list_item">History</li>
@@ -39,24 +42,48 @@
             <li class="nav-list_item"><h2 class="nav-headiner">Careers</h2></li>
             <li class="nav-list_item"><h2 class="nav-headiner">About</h2></li>
           </ul>
+          
+            <ul class="auth-list">
+              <li class="auth-list_item">Login</li>
+              <li class="auth-list_item"><button class="register">Register</button></li>
+            </ul>
+          </div> 
         </nav>
       </div>
 
-      <div class="flex-item">
-        <div class="auth-container">
-          <ul class="auth-list">
-            <li class="auth-list_item">Login</li>
-            <li class="auth-list_item">Register</li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
+    
+    </div>
+  </header>
     <main class="main">
-      <!-- This is where the main content will go -->
+      <section>
+        <h1>Make <br>remote work</h1>
+        <p>Get your team in sync, no matter your location.<br>
+        Streamline processes, create team rituals and<br>
+        watch produtivity soar.
+        </p>
+        <button class="learn-more">learn-more</button>
+        <figure class="section-icons">
+          <img class="icon"src="img/client-databiz.svg">
+          <img class="icon"src="img/client-audiophile.svg">
+          <img class="icon"src="img/client-meet.svg">
+          <img class="icon"src="img/client-maker.svg">
+
+        </figure>
+      </section> 
+       
+      
+
+        <figure class="desktop-img">
+          <img class="desktop" src="img/image-hero-desktop.png">
+        
+        </figure>
+
+        <figure class="mobile-img">
+          <img class="mobile" src="img/image-hero-mobile.png">
+        </figure>
     </main>
 
-    <div class="main">
+  <!--  <div class="main">
       <div class="main-item navb">
         <div id="feature-container" class="left">
           <div class="select-box">
@@ -69,7 +96,7 @@
                   name="category"
                 />
                 <label for="todo"
-                  ><img class="todo" src="img/icon-todo.svg" /> To doList</label
+                  ><img class="todo" src="img/" /> To doList</label
                 >
               </div>
 
@@ -81,7 +108,7 @@
                   name="category"
                 />
                 <label for="todo"
-                  ><img class="calen" src="img/icon-calendar.svg" />
+                  ><img class="calen" src="img/" />
                   Calender</label
                 >
               </div>
@@ -94,7 +121,7 @@
                   name="category"
                 />
                 <label for="todo"
-                  ><img class="rem" src="img/icon-reminders.svg" />
+                  >
                   Reminder</label
                 >
               </div>
@@ -107,7 +134,7 @@
                   name="category"
                 />
                 <label for="todo"
-                  ><img class="plan" src="img/icon-planning.svg" />
+                  ><img class="plan" 
                   Planning</label
                 >
               </div>
@@ -177,7 +204,7 @@
         <img class="desk mobile" src="img/image-hero-desktop.png" />
       </div>
     </div>
-
+  -->
     <script src="script/home.js"></script>
   </body>
 </html>

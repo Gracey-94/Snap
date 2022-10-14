@@ -1,9 +1,10 @@
-let selected=document.querySelector(".selected");
-let optionsContainer= document.querySelector(".options-container");
+let menu=document.querySelector(".menu");
+let mobileNav= document.querySelector(".mobile-nav");
+let closeIcon=document.querySelector(".close-icon");
 
-const option = document.querySelectorAll(".options");
+const listItem = document.querySelectorAll(".dropdown-list_item");
 
-selected.addEventListener("click", () => {
-    optionsContainer.classList.toggle("active");
+menu.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
 });
 
